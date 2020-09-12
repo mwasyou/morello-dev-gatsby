@@ -1,3 +1,3 @@
 export default ({ setBodyAttributes }) => {
-  setBodyAttributes({ className: "bg-black text-white" });
+  setBodyAttributes({ className: "antialiased bg-black text-white" });
 };
