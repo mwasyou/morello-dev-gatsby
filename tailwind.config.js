@@ -1,6 +1,11 @@
 module.exports = {
   future: { purgeLayersByDefault: true, removeDeprecatedGapUtilities: true },
-  purge: ["./src/components/**/*.js", "./src/pages/**/*.js"],
+  purge: {
+    content: ["./src/components/**/*.js", "./src/pages/**/*.js"],
+    options: {
+      whitelist: ["antialiased", "bg-black", "text-white"],
+    },
+  },
   theme: {
     extend: {
       colors: {
